@@ -2,8 +2,25 @@
 
 <manifest>
 	<remote name="github" fetch="https://github.com" review="https://github.com"/>
-	
+
 	<default revision="master" remote="github" sync-c="true" sync-j="4"/>
-	<project name="zczjx/uboot_tiny4412" path="uboot" revision="master"/>
+
+	<!-- buildroot -->
+	<project name="zczjx/buildroot-es_udk" path="buildroot" revision="master"/>
+
+	<!-- uboot -->
+	<project name="zczjx/uboot_tiny4412" path="uboot/uboot-2010.12" revision="master"/>
+	<project name="TinyWindzz/tiny4412_uboot_2018_07" path="uboot/uboot-2018.07" revision="master"/>
+
+	<!-- kernel -->
+	<project name="zczjx/linux-4.4.38-for-tiny4412" path="kernel/linux-4.4.38" revision="master"/>
+	<project name="TinyWindzz/linux-4.20" path="kernel/linux-4.20" revision="master"/>
+
+	<!-- firmware -->
+	<project name="zczjx/tiny4412-userland" path="firmware" revision="master"/>
+
+	<!-- test -->
+	<project name="zczjx/arm-linux-bsp-tests" path="test/bsp" revision="master"/>
+	<project name="zczjx/linux-3rd-lib-tests" path="test/lib" revision="master"/>
 
 </manifest>	
