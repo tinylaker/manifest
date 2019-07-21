@@ -7,17 +7,15 @@
 
 # 下载repo工具
 根据您的办公网络情况，获取repo工具。
-在到构建和谐社会的前提下，需要修改REPO_URL，可参考以下修改：
 ```
-## REPO_URL = 'https://gerrit-googlesource.proxy.ustclug.org/git-repo'
-REPO_URL = https://mirrors.tuna.tsinghua.edu.cn/git/git-repo/
+$ git clone  https://git.dev.tencent.com/codebug8/repo.git
+$ sudo cp repo/repo /bin/
 ```
 
 # repo init
 新建目录存放仓库
 ```
-$ mkdir -p tiny4412
-$ cd tiny4412
+$ mkdir -p tiny4412 && cd tiny4412
 $ repo init -u https://github.com/tinylaker/manifest -m default.xml --no-repo-verify
 ```
 ```
